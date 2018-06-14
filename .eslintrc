@@ -1,0 +1,31 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "import",
+        "jsx-a11y"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "rules": {
+        "react/prop-types": [
+            2
+        ],
+        "react/forbid-prop-types": [
+            1,
+            {
+                "forbid": [
+                    ""
+                ],
+                "checkContextTypes": false,
+                "checkChildContextTypes": false
+            }
+        ]
+    },
+    "extends": [
+        "airbnb"
+    ]
+}
