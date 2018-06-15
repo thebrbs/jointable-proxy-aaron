@@ -8,6 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/restaurant/:restaurantId', express.static(path.join(__dirname, '../public')));
 
+app.use('/reservations', proxy('http://localhost:3001'));
 app.use('/reviews', proxy('http://localhost:3002'));
 app.use('/overviews', proxy('http://localhost:3003'));
 app.use('/photos', proxy('http://localhost:3004'));

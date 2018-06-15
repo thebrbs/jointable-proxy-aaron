@@ -8,41 +8,54 @@
   <meta name="description" content="description">
   <link rel="icon" type="img/png" href="./assests/CavaTableFavicon.PNG" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" src="/photos/photosBundleCSS">
+  <link rel="stylesheet" src="/reviews/reviewsMain.css">
+  <link rel="stylesheet" src="/styles/style.css">
+
 </head>
 
 <body id="bootstrap-overrides">
   <main>
     <div>
-      <img src="./assests/BackgroundImg.png" class="cava-static-background" width="100%">
-      <img src="./assests/CavaTableLogo.PNG" class="cava-logo" width="12%">
+      <img src="./assests/CavaTable_StaticImgBackground.png" class="cava-static-background" width="1441px">
     </div>
     <div>
-      <div id="reservation-service">
-        <span>Reservation goes here</span>
-      </div>
-      <div>
-        <div id="overviewModule">
-          <span>Overview goes here</span>
-        </div>
-        <div id="photo-service">
-          <span>Photos goes here</span>
-        </div>
-        <div id="menusModule">
-          <span>Menu goes here</span>
-        </div>
-        <div id="reviews">
-          <span>Review goes here</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div id="overviewModule">
+              <span>Overview goes here</span>
+            </div>
+            <div id="photo-service">
+              <span>Photos goes here</span>
+            </div>
+            <div id="menusModule">
+              <span>Menu goes here</span>
+            </div>
+            <div id="reviews">
+              <span>Review goes here</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="appReserve" class="sticky-top">
+              <span>Reservation goes here</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    </div>
   </main>
+
+  <script src="/reservations/dist/reservationsBundle.js"></script>
   <script src="/overviews/overviewsBundle.js"></script>
   <script src="/photos/photosBundle"></script>
-  <script src="/photos/photosBundleCSS"></script>
   <script src="/menus/menusBundle.js"></script>
   <script src="/reviews/reviewsBundle.js"></script>
-  <script src="/reviews/reviewsMain.css"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
